@@ -56,22 +56,16 @@ export function ContactSection() {
 
   return (
     <div className="container py-12">
-      <header className="max-w-3xl">
-        <h1 className="text-3xl font-semibold tracking-tight text-brand-black sm:text-4xl">
-          Contact
-        </h1>
-        <p className="mt-3 text-base leading-relaxed text-brand-text">
-          Reach out for service scheduling, maintenance support, and quotes across Dubai.
-        </p>
-      </header>
-
-      <div className="mt-8 grid gap-6 lg:grid-cols-3">
-        <Card className="rounded-2xl lg:col-span-2">
-          <CardHeader>
-            <CardTitle className="text-lg text-brand-black">Request a Quote</CardTitle>
+      <div className="grid gap-8 lg:grid-cols-3">
+        <Card className="rounded-3xl border-none shadow-xl shadow-brand-red/5 lg:col-span-2">
+          <CardHeader className="border-b bg-gray-50/50 p-6">
+            <CardTitle className="flex items-center gap-2 text-xl font-semibold text-brand-black">
+              <MessageCircle className="h-5 w-5 text-brand-red" />
+              Send us a Message
+            </CardTitle>
           </CardHeader>
-          <CardContent>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4">
+          <CardContent className="p-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-6">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label className="text-sm font-medium text-brand-black">Name</label>
@@ -124,7 +118,7 @@ export function ContactSection() {
                   <label className="text-sm font-medium text-brand-black">Service Needed</label>
                   <Select
                     value={form.watch("service")}
-                    onValueChange={(v) => form.setValue("service", v, { shouldValidate: true })}
+                    onValueChange={(v: string) => form.setValue("service", v, { shouldValidate: true })}
                   >
                     <SelectTrigger className="mt-1">
                       <SelectValue placeholder="Select a service" />
@@ -182,9 +176,12 @@ export function ContactSection() {
           </CardContent>
         </Card>
 
-        <Card className="rounded-2xl">
-          <CardHeader>
-            <CardTitle className="text-lg text-brand-black">Contact Details</CardTitle>
+        <Card className="h-fit rounded-3xl border-none shadow-xl shadow-brand-red/5">
+          <CardHeader className="border-b bg-gray-50/50 p-6">
+            <CardTitle className="flex items-center gap-2 text-xl font-semibold text-brand-black">
+              <Phone className="h-5 w-5 text-brand-red" />
+              Contact Information
+            </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4 text-sm text-brand-text">
             <div className="flex items-start gap-2">
