@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ProjectGallery } from "@/components/sections/project-gallery";
 
 export const metadata: Metadata = {
@@ -10,16 +11,26 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-gray-50/50">
-      <div className="bg-brand-black py-16 text-white">
-        <div className="container text-center">
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+      <section className="relative overflow-hidden py-20 text-white sm:py-24">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-2.png"
+            alt="Projects Hero"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-brand-black/70" />
+        </div>
+        <div className="container relative z-10 text-center">
+          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             Our Projects
           </h1>
-          <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
             Discover a selection of our completed works across Dubai, showcasing our commitment to quality and excellence.
           </p>
         </div>
-      </div>
+      </section>
       
       <ProjectGallery />
     </div>
