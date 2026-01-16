@@ -14,6 +14,7 @@ export type Service = {
   title: string;
   icon: LucideIcon;
   bullets: string[];
+  image: string;
 };
 
 export const COMPANY = {
@@ -55,7 +56,8 @@ export const SERVICES: Service[] = [
       "Complete Building Maintenance",
       "Residential & Commercial Maintenance",
       "Preventive & Annual Maintenance Contracts"
-    ]
+    ],
+    image: "/fk-services1.jpeg"
   },
   {
     title: "Electrical Works",
@@ -65,7 +67,8 @@ export const SERVICES: Service[] = [
       "Lighting Systems",
       "Switchgear & Panel Works",
       "Troubleshooting & Maintenance"
-    ]
+    ],
+    image: "/fk-services2.jpeg"
   },
   {
     title: "Plumbing & Sanitary Works",
@@ -75,7 +78,8 @@ export const SERVICES: Service[] = [
       "Water Supply & Drainage Systems",
       "Sanitary Fixture Installation",
       "Leak Detection & Rectification"
-    ]
+    ],
+    image: "/fk-services3.jpeg"
   },
   {
     title: "Air Conditioning Services",
@@ -85,7 +89,8 @@ export const SERVICES: Service[] = [
       "AC Maintenance & Servicing",
       "Duct Cleaning & Repair",
       "Split & Central AC Systems"
-    ]
+    ],
+    image: "/fk-services4.jpeg"
   },
   {
     title: "Painting Works",
@@ -94,7 +99,8 @@ export const SERVICES: Service[] = [
       "Interior & Exterior Painting",
       "Villa & Apartment Painting",
       "Decorative & Protective Coatings"
-    ]
+    ],
+    image: "/fk-services5.jpeg"
   },
   {
     title: "Gypsum & False Ceiling Works",
@@ -103,7 +109,8 @@ export const SERVICES: Service[] = [
       "Gypsum Partition Works",
       "False Ceiling Installation",
       "Decorative Ceiling Designs"
-    ]
+    ],
+    image: "/fk-services6.jpeg"
   },
   {
     title: "Carpentry & Wood Works",
@@ -112,7 +119,8 @@ export const SERVICES: Service[] = [
       "Doors & Cabinets",
       "Wardrobes & Custom Furniture",
       "Repair & Modification Works"
-    ]
+    ],
+    image: "/fk-services7.jpeg"
   },
   {
     title: "Tiling & Flooring Works",
@@ -121,7 +129,8 @@ export const SERVICES: Service[] = [
       "Ceramic, Porcelain & Marble Tiles",
       "Floor & Wall Tiling",
       "Repair & Replacement"
-    ]
+    ],
+    image: "/fk-services8.jpeg"
   }
 ];
 

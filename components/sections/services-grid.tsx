@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SERVICES } from "@/lib/constants";
@@ -25,20 +26,29 @@ export function ServicesGrid({ variant }: { variant: "preview" | "full" }) {
           {items.map((s) => {
             const Icon = s.icon;
             return (
-              <Card key={s.title} className="rounded-2xl border-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand-red/20">
+              <Card key={s.title} className="group overflow-hidden rounded-2xl border-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-red/5 hover:border-brand-red/20">
+                <div className="relative aspect-video w-full overflow-hidden bg-gray-100">
+                  <Image
+                    src={s.image}
+                    alt={s.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                </div>
                 <CardHeader className="space-y-3">
                   <div className="flex items-start justify-between gap-4">
-                    <div className="grid h-10 w-10 place-items-center rounded-xl bg-brand-red/10">
-                      <Icon className="h-5 w-5 text-brand-red" aria-hidden="true" />
+                    <div className="grid h-10 w-10 place-items-center rounded-xl bg-brand-red/10 text-brand-red transition-colors group-hover:bg-brand-red group-hover:text-white">
+                      <Icon className="h-5 w-5" aria-hidden="true" />
                     </div>
                   </div>
-                  <CardTitle className="text-base text-brand-black">{s.title}</CardTitle>
+                  <CardTitle className="text-xl text-brand-black">{s.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm text-brand-text">
+                  <ul className="space-y-3 text-sm text-brand-text">
                     {s.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2">
-                        <Check className="mt-0.5 h-4 w-4 text-brand-red" aria-hidden="true" />
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-red" aria-hidden="true" />
                         <span>{b}</span>
                       </li>
                     ))}
