@@ -5,10 +5,10 @@ import { ArrowRight } from "lucide-react";
 
 export function CtaStrip() {
   return (
-    <section className="relative overflow-hidden bg-brand-black py-16 text-white sm:py-20">
-      <div className="absolute inset-0 opacity-20">
+    <section className="relative overflow-hidden bg-brand-white py-16 text-brand-black sm:py-20">
+      <div className="absolute inset-0 opacity-40">
         <Image
-          src="/images/cta-pattern.png"
+          src="/images/cta-white-bg.png"
           alt="Pattern"
           fill
           className="object-cover"
@@ -18,12 +18,12 @@ export function CtaStrip() {
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
           Ready to upgrade your property?
         </h2>
-        <p className="mt-4 max-w-xl text-lg text-white/80">
+        <p className="mt-4 max-w-xl text-lg text-brand-text">
           Get in touch with our expert team for a free consultation and quote.
           We are ready to handle all your technical and maintenance needs.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-          <Button asChild size="lg" className="bg-brand-red text-white hover:bg-brand-red/90 border-none">
+          <Button asChild size="lg" className="bg-brand-red text-white hover:bg-brand-red/90 border-none shadow-lg shadow-brand-red/20">
             <Link href="/contact">
               Get a Quote <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
@@ -32,7 +32,7 @@ export function CtaStrip() {
              asChild
              variant="outline"
              size="lg"
-             className="border-white/20 bg-white/5 text-white hover:bg-white/10"
+             className="border-brand-black/10 bg-white text-brand-black hover:bg-brand-black/5 hover:text-brand-black"
           >
              <Link href="/services">View Services</Link>
           </Button>
