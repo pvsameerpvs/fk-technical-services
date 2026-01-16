@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ABOUT_US, CORE_VALUES, MISSION, VISION } from "@/lib/constants";
 import { CheckCircle2 } from "lucide-react";
+import { WhyUs } from "@/components/sections/why-us";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -66,6 +67,10 @@ export default function AboutPage() {
             </ul>
           </CardContent>
         </Card>
+      </div>
+      
+      <div className="mt-16">
+        <WhyUs />
       </div>
     </div>
   );
