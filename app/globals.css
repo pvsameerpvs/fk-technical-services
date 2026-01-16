@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #E10600;
+  --brand-black: #000000;
+  --brand-white: #FFFFFF;
+  --brand-text: #2E2E2E;
+
+  --radius: 14px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--brand-text);
+  background: var(--brand-white);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--brand-red) 25%, white);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+.container {
+  @apply w-full;
+}
