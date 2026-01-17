@@ -57,7 +57,7 @@ export const SERVICES: Service[] = [
       "Residential & Commercial Maintenance",
       "Preventive & Annual Maintenance Contracts"
     ],
-    image: "/fk-services1.jpeg"
+    image: "/fk-service-maintenance.png"
   },
   {
     title: "Electrical Works",
@@ -68,7 +68,7 @@ export const SERVICES: Service[] = [
       "Switchgear & Panel Works",
       "Troubleshooting & Maintenance"
     ],
-    image: "/fk-services2.jpeg"
+    image: "/fk-service-electrical.png"
   },
   {
     title: "Plumbing & Sanitary Works",
@@ -79,7 +79,7 @@ export const SERVICES: Service[] = [
       "Sanitary Fixture Installation",
       "Leak Detection & Rectification"
     ],
-    image: "/fk-services3.jpeg"
+    image: "/fk-service-plumbing.png"
   },
   {
     title: "Air Conditioning Services",
@@ -90,7 +90,7 @@ export const SERVICES: Service[] = [
       "Duct Cleaning & Repair",
       "Split & Central AC Systems"
     ],
-    image: "/fk-services4.jpeg"
+    image: "/fk-service-ac.png"
   },
   {
     title: "Painting Works",
@@ -100,7 +100,7 @@ export const SERVICES: Service[] = [
       "Villa & Apartment Painting",
       "Decorative & Protective Coatings"
     ],
-    image: "/fk-services5.jpeg"
+    image: "/fk-service-painting.png"
   },
   {
     title: "Gypsum & False Ceiling Works",
@@ -110,7 +110,7 @@ export const SERVICES: Service[] = [
       "False Ceiling Installation",
       "Decorative Ceiling Designs"
     ],
-    image: "/fk-services6.jpeg"
+    image: "/fk-service-gypsum.png"
   },
   {
     title: "Carpentry & Wood Works",
@@ -120,7 +120,7 @@ export const SERVICES: Service[] = [
       "Wardrobes & Custom Furniture",
       "Repair & Modification Works"
     ],
-    image: "/fk-services7.jpeg"
+    image: "/fk-service-carpentry.png"
   },
   {
     title: "Tiling & Flooring Works",
@@ -130,7 +130,7 @@ export const SERVICES: Service[] = [
       "Floor & Wall Tiling",
       "Repair & Replacement"
     ],
-    image: "/fk-services8.jpeg"
+    image: "/fk-service-tiling.png"
   }
 ];
 
