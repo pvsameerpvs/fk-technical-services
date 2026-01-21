@@ -11,11 +11,11 @@ import { ArrowRight, PhoneCall, ShieldCheck } from "lucide-react";
 
 export function Hero() {
   const images = [
-    "/images/hero-1.png",
-    "/images/hero-2.png",
-    "/images/hero-3.png",
-    "/images/about-team.png",
-    "/images/why-us-tools.png",
+    "/hero-section1.jpeg",
+    "/hero-section2.jpeg",
+    "/hero-section3.jpeg",
+    "/hero-section4.jpeg",
+    
   ];
 
   return (
