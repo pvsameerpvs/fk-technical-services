@@ -9,7 +9,7 @@ export function Industries() {
     <section className="relative overflow-hidden py-24">
       <div className="absolute inset-0">
         <Image
-          src="/images/industries-bg.png"
+          src="/industries-bg.jpeg"
           alt="Industries"
           fill
           className="object-cover"

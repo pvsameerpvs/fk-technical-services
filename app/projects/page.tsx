@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       <section className="relative overflow-hidden py-20 text-white sm:py-24">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero-2.png"
+            src="/hero-2.jpeg"
             alt="Projects Hero"
             fill
             className="object-cover"

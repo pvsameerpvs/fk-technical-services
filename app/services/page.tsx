@@ -16,7 +16,7 @@ export default function ServicesPage() {
       {/* Hero Header */}
       <div className="relative h-[400px] w-full overflow-hidden sm:h-[500px]">
         <Image
-          src="/fk-service-maintenance.png"
+          src="/fk-service-maintenance-1.jpeg"
           alt="Our Services"
           fill
           className="object-cover"

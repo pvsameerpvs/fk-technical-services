@@ -25,7 +25,7 @@ export default function AboutPage() {
         </header>
         <div className="relative aspect-video overflow-hidden rounded-2xl sm:aspect-[4/3] lg:aspect-auto lg:h-[400px]">
           <Image
-            src="/images/about-team.png"
+            src="/about-team-2.jpeg"
             alt="FK Technical Team"
             fill
             className="object-cover"

@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="relative aspect-video overflow-hidden rounded-3xl shadow-xl sm:aspect-[4/3] lg:aspect-auto lg:h-[500px]">
             <Image
-              src="/images/about-team.png"
+              src="/about-team.jpeg"
               alt="FK Technical Service Team"
               fill
               className="object-cover"
