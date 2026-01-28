@@ -23,12 +23,12 @@ export default function AboutPage() {
             {ABOUT_US}
           </p>
         </header>
-        <div className="relative aspect-video overflow-hidden rounded-2xl sm:aspect-[4/3] lg:aspect-auto lg:h-[400px]">
+        <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-50 border border-gray-100 lg:h-[500px]">
           <Image
-            src="/about-team-2.jpeg"
-            alt="FK Technical Team"
+            src="/fk-owner.png"
+            alt="FK Technical Services Owner"
             fill
-            className="object-cover"
+            className="object-contain object-bottom pt-8"
           />
         </div>
       </div>
